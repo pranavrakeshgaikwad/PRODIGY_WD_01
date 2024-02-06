@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Watch Catalog Scoring</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Watches landing page</h1>
+        </header>
+        <main>
+            <section id="catalog" class="catalog-container"></section>
+            <section id="selection">
+                <h2>Compare Watches:</h2>
+                <div class="selection-container">
+                    <select id="watchSelect" multiple></select>
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                <button onclick="compareWatches()">Compare</button>
+            </section>
+            <section id="result"></section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
